@@ -1,0 +1,19 @@
+//
+//  DJCommonFrameWork_a.pch
+//  DJCommonFrameWork
+//
+//  Created by sogou on 16/5/31.
+//  Copyright © 2016年 sogou. All rights reserved.
+//
+
+#ifndef DJCommonFrameWork_a_pch
+#define DJCommonFrameWork_a_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "NSMutableDictionary+DJUtility.h"
+
+
+#endif /* DJCommonFrameWork_a_pch */

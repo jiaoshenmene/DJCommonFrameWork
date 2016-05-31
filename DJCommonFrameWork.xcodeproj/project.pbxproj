@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DB7F2CA1CFD9171007509E1 /* DJCommonFrameWork_a.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DB7F2C91CFD9171007509E1 /* DJCommonFrameWork_a.h */; };
+		8DB7F2CC1CFD9171007509E1 /* DJCommonFrameWork_a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2CB1CFD9171007509E1 /* DJCommonFrameWork_a.m */; };
+		8DB7F2DD1CFD96D2007509E1 /* DJMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2DC1CFD96D2007509E1 /* DJMediator.m */; };
+		8DB7F2E21CFD9765007509E1 /* NSDictionary+DJUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2E11CFD9765007509E1 /* NSDictionary+DJUtility.m */; };
+		8DB7F2E51CFD97AB007509E1 /* NSMutableDictionary+DJUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2E41CFD97AB007509E1 /* NSMutableDictionary+DJUtility.m */; };
+		8DB7F2E71CFD99CC007509E1 /* DJCommonFrameWork_a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2CB1CFD9171007509E1 /* DJCommonFrameWork_a.m */; };
+		8DB7F2E81CFD9A80007509E1 /* NSMutableDictionary+DJUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2E41CFD97AB007509E1 /* NSMutableDictionary+DJUtility.m */; };
+		8DB7F2E91CFD9A83007509E1 /* NSDictionary+DJUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2E11CFD9765007509E1 /* NSDictionary+DJUtility.m */; };
 		8DFE88F51CF8069A00849CA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE88F41CF8069A00849CA2 /* main.m */; };
 		8DFE88F81CF8069A00849CA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE88F71CF8069A00849CA2 /* AppDelegate.m */; };
 		8DFE88FB1CF8069A00849CA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE88FA1CF8069A00849CA2 /* ViewController.m */; };
@@ -34,7 +42,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8DB7F2C51CFD9171007509E1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8DB7F2CA1CFD9171007509E1 /* DJCommonFrameWork_a.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8DB7F2C71CFD9171007509E1 /* libDJCommonFrameWork_a.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDJCommonFrameWork_a.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB7F2C91CFD9171007509E1 /* DJCommonFrameWork_a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJCommonFrameWork_a.h; sourceTree = "<group>"; };
+		8DB7F2CB1CFD9171007509E1 /* DJCommonFrameWork_a.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJCommonFrameWork_a.m; sourceTree = "<group>"; };
+		8DB7F2DA1CFD96D2007509E1 /* DJConnectorPrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJConnectorPrt.h; sourceTree = "<group>"; };
+		8DB7F2DB1CFD96D2007509E1 /* DJMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJMediator.h; sourceTree = "<group>"; };
+		8DB7F2DC1CFD96D2007509E1 /* DJMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJMediator.m; sourceTree = "<group>"; };
+		8DB7F2E01CFD9765007509E1 /* NSDictionary+DJUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DJUtility.h"; sourceTree = "<group>"; };
+		8DB7F2E11CFD9765007509E1 /* NSDictionary+DJUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DJUtility.m"; sourceTree = "<group>"; };
+		8DB7F2E31CFD97AB007509E1 /* NSMutableDictionary+DJUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DJUtility.h"; sourceTree = "<group>"; };
+		8DB7F2E41CFD97AB007509E1 /* NSMutableDictionary+DJUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DJUtility.m"; sourceTree = "<group>"; };
+		8DB7F2E61CFD97F5007509E1 /* DJCommonFrameWork_a.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCommonFrameWork_a.pch; sourceTree = "<group>"; };
 		8DFE88F01CF8069A00849CA2 /* DJCommonFrameWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJCommonFrameWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFE88F41CF8069A00849CA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8DFE88F61CF8069A00849CA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +86,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8DB7F2C41CFD9171007509E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DFE88ED1CF8069A00849CA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +117,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DB7F2C81CFD9171007509E1 /* DJCommonFrameWork_a */ = {
+			isa = PBXGroup;
+			children = (
+				8DB7F2DF1CFD974A007509E1 /* DJAddition */,
+				8DB7F2D91CFD96D2007509E1 /* URLJumpManager */,
+				8DB7F2C91CFD9171007509E1 /* DJCommonFrameWork_a.h */,
+				8DB7F2CB1CFD9171007509E1 /* DJCommonFrameWork_a.m */,
+				8DB7F2E61CFD97F5007509E1 /* DJCommonFrameWork_a.pch */,
+			);
+			path = DJCommonFrameWork_a;
+			sourceTree = "<group>";
+		};
+		8DB7F2D91CFD96D2007509E1 /* URLJumpManager */ = {
+			isa = PBXGroup;
+			children = (
+				8DB7F2DA1CFD96D2007509E1 /* DJConnectorPrt.h */,
+				8DB7F2DB1CFD96D2007509E1 /* DJMediator.h */,
+				8DB7F2DC1CFD96D2007509E1 /* DJMediator.m */,
+			);
+			path = URLJumpManager;
+			sourceTree = "<group>";
+		};
+		8DB7F2DF1CFD974A007509E1 /* DJAddition */ = {
+			isa = PBXGroup;
+			children = (
+				8DB7F2E01CFD9765007509E1 /* NSDictionary+DJUtility.h */,
+				8DB7F2E11CFD9765007509E1 /* NSDictionary+DJUtility.m */,
+				8DB7F2E31CFD97AB007509E1 /* NSMutableDictionary+DJUtility.h */,
+				8DB7F2E41CFD97AB007509E1 /* NSMutableDictionary+DJUtility.m */,
+			);
+			path = DJAddition;
+			sourceTree = "<group>";
+		};
 		8DFE88E71CF8069A00849CA2 = {
 			isa = PBXGroup;
 			children = (
 				8DFE88F21CF8069A00849CA2 /* DJCommonFrameWork */,
 				8DFE890C1CF8069A00849CA2 /* DJCommonFrameWorkTests */,
 				8DFE89171CF8069A00849CA2 /* DJCommonFrameWorkUITests */,
+				8DB7F2C81CFD9171007509E1 /* DJCommonFrameWork_a */,
 				8DFE88F11CF8069A00849CA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +167,7 @@
 				8DFE88F01CF8069A00849CA2 /* DJCommonFrameWork.app */,
 				8DFE89091CF8069A00849CA2 /* DJCommonFrameWorkTests.xctest */,
 				8DFE89141CF8069A00849CA2 /* DJCommonFrameWorkUITests.xctest */,
+				8DB7F2C71CFD9171007509E1 /* libDJCommonFrameWork_a.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +217,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8DB7F2C61CFD9171007509E1 /* DJCommonFrameWork_a */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DB7F2CF1CFD9171007509E1 /* Build configuration list for PBXNativeTarget "DJCommonFrameWork_a" */;
+			buildPhases = (
+				8DB7F2C31CFD9171007509E1 /* Sources */,
+				8DB7F2C41CFD9171007509E1 /* Frameworks */,
+				8DB7F2C51CFD9171007509E1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJCommonFrameWork_a;
+			productName = DJCommonFrameWork_a;
+			productReference = 8DB7F2C71CFD9171007509E1 /* libDJCommonFrameWork_a.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		8DFE88EF1CF8069A00849CA2 /* DJCommonFrameWork */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DFE891D1CF8069A00849CA2 /* Build configuration list for PBXNativeTarget "DJCommonFrameWork" */;
@@ -205,6 +296,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = sogou;
 				TargetAttributes = {
+					8DB7F2C61CFD9171007509E1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WRM5754N86;
+					};
 					8DFE88EF1CF8069A00849CA2 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = WRM5754N86;
@@ -237,6 +332,7 @@
 				8DFE88EF1CF8069A00849CA2 /* DJCommonFrameWork */,
 				8DFE89081CF8069A00849CA2 /* DJCommonFrameWorkTests */,
 				8DFE89131CF8069A00849CA2 /* DJCommonFrameWorkUITests */,
+				8DB7F2C61CFD9171007509E1 /* DJCommonFrameWork_a */,
 			);
 		};
 /* End PBXProject section */
@@ -269,11 +365,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8DB7F2C31CFD9171007509E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB7F2E51CFD97AB007509E1 /* NSMutableDictionary+DJUtility.m in Sources */,
+				8DB7F2DD1CFD96D2007509E1 /* DJMediator.m in Sources */,
+				8DB7F2E21CFD9765007509E1 /* NSDictionary+DJUtility.m in Sources */,
+				8DB7F2CC1CFD9171007509E1 /* DJCommonFrameWork_a.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DFE88EC1CF8069A00849CA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8DFE88FB1CF8069A00849CA2 /* ViewController.m in Sources */,
+				8DB7F2E91CFD9A83007509E1 /* NSDictionary+DJUtility.m in Sources */,
+				8DB7F2E81CFD9A80007509E1 /* NSMutableDictionary+DJUtility.m in Sources */,
+				8DB7F2E71CFD99CC007509E1 /* DJCommonFrameWork_a.m in Sources */,
 				8DFE88F81CF8069A00849CA2 /* AppDelegate.m in Sources */,
 				8DFE88F51CF8069A00849CA2 /* main.m in Sources */,
 			);
@@ -330,6 +440,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8DB7F2CD1CFD9171007509E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8DB7F2CE1CFD9171007509E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		8DFE891B1CF8069A00849CA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -418,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = DJCommonFrameWork_a/DJCommonFrameWork_a.pch;
 				INFOPLIST_FILE = DJCommonFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.DJCommonFrameWork;
@@ -429,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = DJCommonFrameWork_a/DJCommonFrameWork_a.pch;
 				INFOPLIST_FILE = DJCommonFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.DJCommonFrameWork;
@@ -485,6 +615,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8DB7F2CF1CFD9171007509E1 /* Build configuration list for PBXNativeTarget "DJCommonFrameWork_a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB7F2CD1CFD9171007509E1 /* Debug */,
+				8DB7F2CE1CFD9171007509E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8DFE88EB1CF8069A00849CA2 /* Build configuration list for PBXProject "DJCommonFrameWork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -501,6 +639,7 @@
 				8DFE891F1CF8069A00849CA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DFE89201CF8069A00849CA2 /* Build configuration list for PBXNativeTarget "DJCommonFrameWorkTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +648,7 @@
 				8DFE89221CF8069A00849CA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DFE89231CF8069A00849CA2 /* Build configuration list for PBXNativeTarget "DJCommonFrameWorkUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +657,7 @@
 				8DFE89251CF8069A00849CA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>DJCommonFrameWork_a.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8DB7F2C61CFD9171007509E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8DFE88EF1CF8069A00849CA2</key>
 		<dict>
 			<key>primary</key>

@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "DJCommonFrameWork_a.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [DJCommonFrameWork_a test];
 }
 
 - (void)didReceiveMemoryWarning {
