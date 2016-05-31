@@ -9,8 +9,9 @@
 #import "ViewController.h"
 
 #import "DJCommonFrameWork_a.h"
+#import "DJMediator.h"
 
-@interface ViewController ()
+@interface ViewController ()<DJConnectorPrt>
 
 @end
 
@@ -21,6 +22,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [DJCommonFrameWork_a test];
+    [DJMediator registerConnector:self];
+    
 }
 
 - (void)didReceiveMemoryWarning {

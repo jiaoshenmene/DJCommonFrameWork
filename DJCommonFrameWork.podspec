@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
   # s.ios.exclude_files = 'Classes/osx'  
   # s.osx.exclude_files = 'Classes/ios'  
   s.public_header_files = "DJCommonFrameWork_a/**/*.h", "$(PODS_ROOT)/**/*.h"
-  s.public_header_file = 'DJCommonFrameWork_a/DJCommonFrameWork_a.pch'  
+  s.prefix_header_file = 'DJCommonFrameWork_a/DJCommonFrameWork_a.pch'
   s.frameworks = "UIKit" ,"VideoToolbox" ,"QuartzCore" ,"OpenGLES", "MobileCoreServices", "MediaPlayer", "CoreVideo", "CoreMedia", "CoreGraphics",  "AVFoundation", "AudioToolbox"
 end  

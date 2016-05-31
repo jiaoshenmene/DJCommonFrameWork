@@ -15,6 +15,7 @@
 		8DB7F2E71CFD99CC007509E1 /* DJCommonFrameWork_a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2CB1CFD9171007509E1 /* DJCommonFrameWork_a.m */; };
 		8DB7F2E81CFD9A80007509E1 /* NSMutableDictionary+DJUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2E41CFD97AB007509E1 /* NSMutableDictionary+DJUtility.m */; };
 		8DB7F2E91CFD9A83007509E1 /* NSDictionary+DJUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2E11CFD9765007509E1 /* NSDictionary+DJUtility.m */; };
+		8DB7F2EA1CFDAF89007509E1 /* DJMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2DC1CFD96D2007509E1 /* DJMediator.m */; };
 		8DFE88F51CF8069A00849CA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE88F41CF8069A00849CA2 /* main.m */; };
 		8DFE88F81CF8069A00849CA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE88F71CF8069A00849CA2 /* AppDelegate.m */; };
 		8DFE88FB1CF8069A00849CA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE88FA1CF8069A00849CA2 /* ViewController.m */; };
@@ -380,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB7F2EA1CFDAF89007509E1 /* DJMediator.m in Sources */,
 				8DFE88FB1CF8069A00849CA2 /* ViewController.m in Sources */,
 				8DB7F2E91CFD9A83007509E1 /* NSDictionary+DJUtility.m in Sources */,
 				8DB7F2E81CFD9A80007509E1 /* NSMutableDictionary+DJUtility.m in Sources */,
