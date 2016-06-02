@@ -7,6 +7,7 @@
 //
 
 #import "DJURLJumpManager.h"
+#import "FrameWorkTestVC.h"
 
 @interface DJURLJumpManager()<DJConnectorPrt>
 
@@ -33,5 +34,12 @@ ObjectInitSelf
         return YES;
     }
     return NO;
+}
+
+
+- (UIViewController *) connectToOpenURL:(NSURL *)URL params:(NSDictionary *)params
+{
+    FrameWorkTestVC *vc = [[FrameWorkTestVC alloc] init];
+    return vc;
 }
 @end

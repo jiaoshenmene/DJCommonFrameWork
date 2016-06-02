@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8DB39DD71CFFCC610025E1E8 /* DJURLJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB39DD61CFFCC610025E1E8 /* DJURLJumpManager.m */; };
 		8DB39DD81CFFCC610025E1E8 /* DJURLJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB39DD61CFFCC610025E1E8 /* DJURLJumpManager.m */; };
+		8DB39DDB1CFFDE2A0025E1E8 /* FrameWorkTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB39DDA1CFFDE2A0025E1E8 /* FrameWorkTestVC.m */; };
+		8DB39DDC1CFFDE2A0025E1E8 /* FrameWorkTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB39DDA1CFFDE2A0025E1E8 /* FrameWorkTestVC.m */; };
 		8DB7F2CA1CFD9171007509E1 /* DJCommonFrameWork_a.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DB7F2C91CFD9171007509E1 /* DJCommonFrameWork_a.h */; };
 		8DB7F2CC1CFD9171007509E1 /* DJCommonFrameWork_a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2CB1CFD9171007509E1 /* DJCommonFrameWork_a.m */; };
 		8DB7F2DD1CFD96D2007509E1 /* DJMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2DC1CFD96D2007509E1 /* DJMediator.m */; };
@@ -61,6 +63,8 @@
 /* Begin PBXFileReference section */
 		8DB39DD51CFFCC610025E1E8 /* DJURLJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJURLJumpManager.h; sourceTree = "<group>"; };
 		8DB39DD61CFFCC610025E1E8 /* DJURLJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJURLJumpManager.m; sourceTree = "<group>"; };
+		8DB39DD91CFFDE2A0025E1E8 /* FrameWorkTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameWorkTestVC.h; sourceTree = "<group>"; };
+		8DB39DDA1CFFDE2A0025E1E8 /* FrameWorkTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameWorkTestVC.m; sourceTree = "<group>"; };
 		8DB7F2C71CFD9171007509E1 /* libDJCommonFrameWork_a.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDJCommonFrameWork_a.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB7F2C91CFD9171007509E1 /* DJCommonFrameWork_a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJCommonFrameWork_a.h; sourceTree = "<group>"; };
 		8DB7F2CB1CFD9171007509E1 /* DJCommonFrameWork_a.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJCommonFrameWork_a.m; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				8DFE88F71CF8069A00849CA2 /* AppDelegate.m */,
 				8DFE88F91CF8069A00849CA2 /* ViewController.h */,
 				8DFE88FA1CF8069A00849CA2 /* ViewController.m */,
+				8DB39DD91CFFDE2A0025E1E8 /* FrameWorkTestVC.h */,
+				8DB39DDA1CFFDE2A0025E1E8 /* FrameWorkTestVC.m */,
 				8DFE88FC1CF8069A00849CA2 /* Main.storyboard */,
 				8DFE88FF1CF8069A00849CA2 /* Assets.xcassets */,
 				8DFE89011CF8069A00849CA2 /* LaunchScreen.storyboard */,
@@ -379,6 +385,7 @@
 				8DB7F2E51CFD97AB007509E1 /* NSMutableDictionary+DJUtility.m in Sources */,
 				8DB7F2DD1CFD96D2007509E1 /* DJMediator.m in Sources */,
 				8DB7F2E21CFD9765007509E1 /* NSDictionary+DJUtility.m in Sources */,
+				8DB39DDC1CFFDE2A0025E1E8 /* FrameWorkTestVC.m in Sources */,
 				8DB39DD81CFFCC610025E1E8 /* DJURLJumpManager.m in Sources */,
 				8DB7F2CC1CFD9171007509E1 /* DJCommonFrameWork_a.m in Sources */,
 			);
@@ -388,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB39DDB1CFFDE2A0025E1E8 /* FrameWorkTestVC.m in Sources */,
 				8DB7F2EA1CFDAF89007509E1 /* DJMediator.m in Sources */,
 				8DFE88FB1CF8069A00849CA2 /* ViewController.m in Sources */,
 				8DB7F2E91CFD9A83007509E1 /* NSDictionary+DJUtility.m in Sources */,

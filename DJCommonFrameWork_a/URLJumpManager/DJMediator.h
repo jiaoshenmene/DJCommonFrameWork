@@ -14,4 +14,7 @@
                             
 + (BOOL) canRouteURL:(nonnull NSURL *)url;
 
+
++ (nullable UIViewController *) viewControllerForURL:(nonnull NSURL *)url;
+
 @end

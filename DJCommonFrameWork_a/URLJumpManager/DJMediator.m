@@ -55,7 +55,9 @@ static NSMutableDictionary<NSString *, id<DJConnectorPrt>> *m_connectorMap = nil
 
 
 
-
++ (nullable UIViewController *) viewControllerForURL:(nonnull NSURL *)url{
+    return [self viewControllerForURL:url withParameters:nil];
+}
 
 
 
@@ -68,14 +70,43 @@ static NSMutableDictionary<NSString *, id<DJConnectorPrt>> *m_connectorMap = nil
     
     __block UIViewController *returnObj = nil;
     __block int queryCount = 0;
+    NSDictionary *userParams = [self userParametersWithURL:url andParameters:params];
+    [m_connectorMap enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, id<DJConnectorPrt>  _Nonnull obj, BOOL * _Nonnull stop) {
+        queryCount++;
+        if ([obj respondsToSelector:@selector(connectToOpenURL:params:)]) {
+            returnObj = [obj connectToOpenURL:url params:userParams];
+            if (returnObj && [returnObj isKindOfClass:[UIViewController class]]) {
+                *stop = YES;
+            }
+        }
+    }];
     
-    return nil;
+    
+    
+    
+    
+    return returnObj;
 }
 
 
 
 
-
++ (NSDictionary *) userParametersWithURL:(nonnull NSURL *)url andParameters:(nullable NSDictionary *)params{
+    NSArray *pairs = [url.query componentsSeparatedByString:@"&"];
+    NSMutableDictionary *userParams = [NSMutableDictionary dictionary];
+    for (NSString *item in pairs) {
+        NSArray *array = [item componentsSeparatedByString:@"="];
+        if (array.count == 2) {
+            NSString *key = array[0];
+            NSString *value = array[1];
+            [userParams setObjectSafe:value forKey:key];
+        }
+    }
+    [userParams addEntriesFromDictionary:params];
+    NSLog(@"url = %@",url);
+    
+    return [userParams copy];
+}
 
 
 

@@ -22,7 +22,9 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [DJCommonFrameWork_a test];
-    [DJMediator canRouteURL:[NSURL URLWithString:@"productScheme://framework"]];
+    [DJMediator canRouteURL:[NSURL URLWithString:@"productScheme://framework?username=dujia&password=123"]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
