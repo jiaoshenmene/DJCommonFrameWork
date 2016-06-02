@@ -12,5 +12,6 @@
 
 + (void) registerConnector:(nonnull id<DJConnectorPrt>) connector;
                             
++ (BOOL) canRouteURL:(nonnull NSURL *)url;
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DB39DD71CFFCC610025E1E8 /* DJURLJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB39DD61CFFCC610025E1E8 /* DJURLJumpManager.m */; };
+		8DB39DD81CFFCC610025E1E8 /* DJURLJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB39DD61CFFCC610025E1E8 /* DJURLJumpManager.m */; };
 		8DB7F2CA1CFD9171007509E1 /* DJCommonFrameWork_a.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DB7F2C91CFD9171007509E1 /* DJCommonFrameWork_a.h */; };
 		8DB7F2CC1CFD9171007509E1 /* DJCommonFrameWork_a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2CB1CFD9171007509E1 /* DJCommonFrameWork_a.m */; };
 		8DB7F2DD1CFD96D2007509E1 /* DJMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7F2DC1CFD96D2007509E1 /* DJMediator.m */; };
@@ -57,6 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8DB39DD51CFFCC610025E1E8 /* DJURLJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJURLJumpManager.h; sourceTree = "<group>"; };
+		8DB39DD61CFFCC610025E1E8 /* DJURLJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJURLJumpManager.m; sourceTree = "<group>"; };
 		8DB7F2C71CFD9171007509E1 /* libDJCommonFrameWork_a.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDJCommonFrameWork_a.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB7F2C91CFD9171007509E1 /* DJCommonFrameWork_a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJCommonFrameWork_a.h; sourceTree = "<group>"; };
 		8DB7F2CB1CFD9171007509E1 /* DJCommonFrameWork_a.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJCommonFrameWork_a.m; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				8DB7F2DA1CFD96D2007509E1 /* DJConnectorPrt.h */,
 				8DB7F2DB1CFD96D2007509E1 /* DJMediator.h */,
 				8DB7F2DC1CFD96D2007509E1 /* DJMediator.m */,
+				8DB39DD51CFFCC610025E1E8 /* DJURLJumpManager.h */,
+				8DB39DD61CFFCC610025E1E8 /* DJURLJumpManager.m */,
 			);
 			path = URLJumpManager;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				8DB7F2E51CFD97AB007509E1 /* NSMutableDictionary+DJUtility.m in Sources */,
 				8DB7F2DD1CFD96D2007509E1 /* DJMediator.m in Sources */,
 				8DB7F2E21CFD9765007509E1 /* NSDictionary+DJUtility.m in Sources */,
+				8DB39DD81CFFCC610025E1E8 /* DJURLJumpManager.m in Sources */,
 				8DB7F2CC1CFD9171007509E1 /* DJCommonFrameWork_a.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +393,7 @@
 				8DB7F2E91CFD9A83007509E1 /* NSDictionary+DJUtility.m in Sources */,
 				8DB7F2E81CFD9A80007509E1 /* NSMutableDictionary+DJUtility.m in Sources */,
 				8DB7F2E71CFD99CC007509E1 /* DJCommonFrameWork_a.m in Sources */,
+				8DB39DD71CFFCC610025E1E8 /* DJURLJumpManager.m in Sources */,
 				8DFE88F81CF8069A00849CA2 /* AppDelegate.m in Sources */,
 				8DFE88F51CF8069A00849CA2 /* main.m in Sources */,
 			);
@@ -624,6 +632,7 @@
 				8DB7F2CE1CFD9171007509E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DFE88EB1CF8069A00849CA2 /* Build configuration list for PBXProject "DJCommonFrameWork" */ = {
 			isa = XCConfigurationList;

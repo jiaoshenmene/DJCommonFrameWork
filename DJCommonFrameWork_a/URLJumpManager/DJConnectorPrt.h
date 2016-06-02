@@ -10,4 +10,14 @@
 
 @protocol DJConnectorPrt <NSObject>
 
+@optional
+/*
+    Current component request url
+ */
+-(BOOL)canOpenURL:(nonnull NSURL *)URL;
+
+
+
+
+
 @end

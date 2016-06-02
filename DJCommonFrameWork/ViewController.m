@@ -22,8 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [DJCommonFrameWork_a test];
-    [DJMediator registerConnector:self];
-    
+    [DJMediator canRouteURL:[NSURL URLWithString:@"productScheme://framework"]];
 }
 
 - (void)didReceiveMemoryWarning {
