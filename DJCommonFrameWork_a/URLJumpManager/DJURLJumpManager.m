@@ -29,7 +29,11 @@ ObjectInitSelf
 
 -(BOOL)canOpenURL:(nonnull NSURL *)URL
 {
+    NSString *searchType = [URL relativePath];
     if ([URL.host isEqualToString:@"framework"]) {
+        if ([searchType isEqualToString:@"/frameworkVC"]) {
+            NSLog(@"yes");
+        }
         NSLog(@"yes");
         return YES;
     }
@@ -39,7 +43,17 @@ ObjectInitSelf
 
 - (UIViewController *) connectToOpenURL:(NSURL *)URL params:(NSDictionary *)params
 {
-    FrameWorkTestVC *vc = [[FrameWorkTestVC alloc] init];
-    return vc;
+    NSString *searchType = [URL relativePath];
+    NSLog(@"url = %@,params = %@,host = %@,searchType = %@",URL,params,URL.host,searchType);
+    
+    
+    if ([URL.host isEqualToString:@"framework"]) {
+        if ([searchType isEqualToString:@"/frameworkVC"]) {
+            FrameWorkTestVC *vc = [[FrameWorkTestVC alloc] init];
+            return vc;
+        }
+    }
+    return nil;
+    
 }
 @end

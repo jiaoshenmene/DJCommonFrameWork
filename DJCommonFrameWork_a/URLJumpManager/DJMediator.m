@@ -37,6 +37,7 @@ static NSMutableDictionary<NSString *, id<DJConnectorPrt>> *m_connectorMap = nil
 
 + (BOOL) canRouteURL:(nonnull NSURL *)url
 {
+    NSLog(@"%@",url);
     if (!m_connectorMap || m_connectorMap <= 0 ) {
         return NO;
     }

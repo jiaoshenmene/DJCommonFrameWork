@@ -1,3 +1,693 @@
+sogoudeiMac-3:~ sogou$ cd /Users/sogou/Work/SGGit/SGInputOrigin/BaseKeyboard/Model/InputManager/Server/CoreService
+sogoudeiMac-3:CoreService sogou$ git commit -m "修改编译错误"
+[master 902dd14] 修改编译错误
+ 4 files changed, 7 insertions(+), 8 deletions(-)
+sogoudeiMac-3:CoreService sogou$ git push 
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (15/15), 1.22 KiB | 0 bytes/s, done.
+Total 15 (delta 12), reused 0 (delta 0)
+To git@10.134.74.226:GIME-IOS/SGInputOrigin.git
+   38f93eb..902dd14  master -> master
+sogoudeiMac-3:CoreService sogou$ git branch 
+* master
+sogoudeiMac-3:CoreService sogou$ cd /Users/sogou/Work/SGGit/GIMEAppTest 
+sogoudeiMac-3:GIMEAppTest sogou$ git init
+Reinitialized existing Git repository in /Users/sogou/Work/SGGit/GIMEAppTest/.git/
+sogoudeiMac-3:GIMEAppTest sogou$ git commit -m "first commit"
+On branch master
+Changes not staged for commit:
+	modified:   GIMEAppTest.xcodeproj/xcuserdata/sogou.xcuserdatad/xcschemes/GIMEAppTest.xcscheme
+
+Untracked files:
+	.gitigonre
+
+no changes added to commit
+sogoudeiMac-3:GIMEAppTest sogou$ git add .
+sogoudeiMac-3:GIMEAppTest sogou$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitigonre
+	modified:   GIMEAppTest.xcodeproj/xcuserdata/sogou.xcuserdatad/xcschemes/GIMEAppTest.xcscheme
+
+sogoudeiMac-3:GIMEAppTest sogou$ git commit -m "first commit"
+[master 0215ad7] first commit
+ 2 files changed, 122 insertions(+)
+ create mode 100644 .gitigonre
+sogoudeiMac-3:GIMEAppTest sogou$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+sogoudeiMac-3:GIMEAppTest sogou$ git status
+On branch master
+nothing to commit, working directory clean
+sogoudeiMac-3:GIMEAppTest sogou$ git branch 
+* master
+sogoudeiMac-3:GIMEAppTest sogou$ git remote add origin git@10.134.74.226:GIME-IOS/GIMEAppTest.git
+sogoudeiMac-3:GIMEAppTest sogou$ git push -u origin master
+Counting objects: 37, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (31/31), done.
+Writing objects: 100% (37/37), 11.37 KiB | 0 bytes/s, done.
+Total 37 (delta 4), reused 0 (delta 0)
+To git@10.134.74.226:GIME-IOS/GIMEAppTest.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+sogoudeiMac-3:GIMEAppTest sogou$ git add *
+sogoudeiMac-3:GIMEAppTest sogou$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+sogoudeiMac-3:GIMEAppTest sogou$ git pull origin master
+From 10.134.74.226:GIME-IOS/GIMEAppTest
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+sogoudeiMac-3:GIMEAppTest sogou$ git name
+git: 'name' is not a git command. See 'git --help'.
+
+Did you mean this?
+	blame
+sogoudeiMac-3:GIMEAppTest sogou$ git --help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+sogoudeiMac-3:GIMEAppTest sogou$ git log
+commit 7a1828f723ecf361016f0210a04790a8c6d11e00
+Author: sogou <815319775@qq.com>
+Date:   Tue Jun 7 10:08:23 2016 +0800
+
+    测试键盘app
+
+commit 09ffb8d1c9ddbe14cb1244cc0c6dde2c7be40cc6
+Author: sogou <815319775@qq.com>
+Date:   Mon Jun 6 19:56:50 2016 +0800
+
+    update
+
+commit 0215ad72c03c8b16429afd67f33522005ca1a2a5
+Author: sogou <815319775@qq.com>
+Date:   Mon Jun 6 19:53:01 2016 +0800
+
+    first commit
+
+commit b515f577f5cf7b0ba98005726c0fa07235a7beda
+Author: sogou <815319775@qq.com>
+Date:   Mon Jun 6 19:49:02 2016 +0800
+
+    Initial Commit
+sogoudeiMac-3:GIMEAppTest sogou$ git config --global user.name "dujia"
+sogoudeiMac-3:GIMEAppTest sogou$ git log
+commit 7a1828f723ecf361016f0210a04790a8c6d11e00
+Author: sogou <815319775@qq.com>
+Date:   Tue Jun 7 10:08:23 2016 +0800
+
+    测试键盘app
+
+commit 09ffb8d1c9ddbe14cb1244cc0c6dde2c7be40cc6
+Author: sogou <815319775@qq.com>
+Date:   Mon Jun 6 19:56:50 2016 +0800
+
+    update
+
+commit 0215ad72c03c8b16429afd67f33522005ca1a2a5
+Author: sogou <815319775@qq.com>
+Date:   Mon Jun 6 19:53:01 2016 +0800
+
+    first commit
+
+commit b515f577f5cf7b0ba98005726c0fa07235a7beda
+Author: sogou <815319775@qq.com>
+Date:   Mon Jun 6 19:49:02 2016 +0800
+
+    Initial Commit
+sogoudeiMac-3:GIMEAppTest sogou$ 
+  [恢复于 2016年6月8日 上午8:57:13]
+Last login: Wed Jun  8 08:57:13 on ttys000
+sogoudeiMac-3:GIMEAppTest dujia$ cd /Users/sogou/Work/SGProject/Study/CTest/BuidlerInterKeyContent 
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git init
+Reinitialized existing Git repository in /Users/sogou/Work/SGProject/Study/CTest/BuidlerInterKeyContent/.git/
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git remote add origin git@10.134.74.226:GIME-IOS/BuidlerInterKeyContent.git
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   BuidlerInterKeyContent.xcodeproj/project.pbxproj
+	modified:   BuidlerInterKeyContent.xcodeproj/xcuserdata/sogou.xcuserdatad/xcschemes/BuidlerInterKeyContent.xcscheme
+	modified:   BuidlerInterKeyContent/ViewController.m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	BuidlerInterKeyContent.xcodeproj/xcuserdata/dujia.xcuserdatad/
+	BuidlerInterKeyContent.xcodeproj/xcuserdata/sogou.xcuserdatad/xcdebugger/
+	BuidlerInterKeyContent/Languages/
+	BuidlerInterKeyContent/Resources/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git add 。
+fatal: pathspec '。' did not match any files
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git add .
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   BuidlerInterKeyContent.xcodeproj/project.pbxproj
+	new file:   BuidlerInterKeyContent.xcodeproj/xcuserdata/dujia.xcuserdatad/xcschemes/BuidlerInterKeyContent.xcscheme
+	new file:   BuidlerInterKeyContent.xcodeproj/xcuserdata/dujia.xcuserdatad/xcschemes/xcschememanagement.plist
+	new file:   BuidlerInterKeyContent.xcodeproj/xcuserdata/sogou.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+	modified:   BuidlerInterKeyContent.xcodeproj/xcuserdata/sogou.xcuserdatad/xcschemes/BuidlerInterKeyContent.xcscheme
+	new file:   BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutAZERTY.h
+	new file:   BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutAZERTY.m
+	new file:   BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutQWERTY.h
+	new file:   BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutQWERTY.m
+	new file:   BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutRTZ.h
+	new file:   BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutRTZ.m
+	new file:   BuidlerInterKeyContent/Languages/Command/BuildFrCommand.h
+	new file:   BuidlerInterKeyContent/Languages/Command/BuildFrCommand.m
+	new file:   BuidlerInterKeyContent/Languages/Command/CommandBuilder.h
+	new file:   BuidlerInterKeyContent/Languages/Command/CommandBuilder.m
+	new file:   BuidlerInterKeyContent/Languages/Deutsch/BuildGermanKeyboardShow.h
+	new file:   BuidlerInterKeyContent/Languages/Deutsch/BuildGermanKeyboardShow.m
+	new file:   BuidlerInterKeyContent/Languages/Deutsch/BuildeDefultGermanKeyContent.h
+	new file:   BuidlerInterKeyContent/Languages/Deutsch/BuildeDefultGermanKeyContent.m
+	new file:   BuidlerInterKeyContent/Languages/English/BuildEnglishKeyboardShow.h
+	new file:   BuidlerInterKeyContent/Languages/English/BuildEnglishKeyboardShow.m
+	new file:   BuidlerInterKeyContent/Languages/French/BuildFrenchKeyboardShow.h
+	new file:   BuidlerInterKeyContent/Languages/French/BuildFrenchKeyboardShow.m
+	new file:   BuidlerInterKeyContent/Resources/Command/key_content.plist
+	new file:   BuidlerInterKeyContent/Resources/DE/layout_ german.plist
+	new file:   BuidlerInterKeyContent/Resources/DE/layout_Defaultgerman.plist
+	new file:   BuidlerInterKeyContent/Resources/EN/layout_26keyen.plist
+	new file:   BuidlerInterKeyContent/Resources/EN/layout_26keyendefault.plist
+	modified:   BuidlerInterKeyContent/ViewController.m
+
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git commit -m "first commit"
+[master bc68d52] first commit
+ 29 files changed, 12119 insertions(+)
+ create mode 100644 BuidlerInterKeyContent.xcodeproj/xcuserdata/dujia.xcuserdatad/xcschemes/BuidlerInterKeyContent.xcscheme
+ create mode 100644 BuidlerInterKeyContent.xcodeproj/xcuserdata/dujia.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 BuidlerInterKeyContent.xcodeproj/xcuserdata/sogou.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+ create mode 100644 BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutAZERTY.h
+ create mode 100644 BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutAZERTY.m
+ create mode 100644 BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutQWERTY.h
+ create mode 100644 BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutQWERTY.m
+ create mode 100644 BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutRTZ.h
+ create mode 100644 BuidlerInterKeyContent/Languages/BuildLayout/DeutschLayout/DeutschLayoutRTZ.m
+ create mode 100644 BuidlerInterKeyContent/Languages/Command/BuildFrCommand.h
+ create mode 100644 BuidlerInterKeyContent/Languages/Command/BuildFrCommand.m
+ create mode 100644 BuidlerInterKeyContent/Languages/Command/CommandBuilder.h
+ create mode 100644 BuidlerInterKeyContent/Languages/Command/CommandBuilder.m
+ create mode 100644 BuidlerInterKeyContent/Languages/Deutsch/BuildGermanKeyboardShow.h
+ create mode 100644 BuidlerInterKeyContent/Languages/Deutsch/BuildGermanKeyboardShow.m
+ create mode 100644 BuidlerInterKeyContent/Languages/Deutsch/BuildeDefultGermanKeyContent.h
+ create mode 100644 BuidlerInterKeyContent/Languages/Deutsch/BuildeDefultGermanKeyContent.m
+ create mode 100644 BuidlerInterKeyContent/Languages/English/BuildEnglishKeyboardShow.h
+ create mode 100644 BuidlerInterKeyContent/Languages/English/BuildEnglishKeyboardShow.m
+ create mode 100644 BuidlerInterKeyContent/Languages/French/BuildFrenchKeyboardShow.h
+ create mode 100644 BuidlerInterKeyContent/Languages/French/BuildFrenchKeyboardShow.m
+ create mode 100644 BuidlerInterKeyContent/Resources/Command/key_content.plist
+ create mode 100644 BuidlerInterKeyContent/Resources/DE/layout_ german.plist
+ create mode 100644 BuidlerInterKeyContent/Resources/DE/layout_Defaultgerman.plist
+ create mode 100644 BuidlerInterKeyContent/Resources/EN/layout_26keyen.plist
+ create mode 100644 BuidlerInterKeyContent/Resources/EN/layout_26keyendefault.plist
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git push -u origin master
+Counting objects: 76, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (69/69), done.
+Writing objects: 100% (76/76), 27.77 KiB | 0 bytes/s, done.
+Total 76 (delta 22), reused 0 (delta 0)
+To git@10.134.74.226:GIME-IOS/BuidlerInterKeyContent.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git add .
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitigonre
+
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git commit -m "忽略文件"
+[master 4b90f91] 忽略文件
+ 1 file changed, 57 insertions(+)
+ create mode 100644 .gitigonre
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ git push 
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 910 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@10.134.74.226:GIME-IOS/BuidlerInterKeyContent.git
+   bc68d52..4b90f91  master -> master
+sogoudeiMac-3:BuidlerInterKeyContent dujia$ cd /Users/sogou/Work/SGGit 
+sogoudeiMac-3:SGGit dujia$ git clone git@10.134.74.226:GIME-IOS/BuidlerInterKeyContent.git
+Cloning into 'BuidlerInterKeyContent'...
+remote: Counting objects: 79, done.
+remote: Compressing objects: 100% (72/72), done.
+remote: Total 79 (delta 23), reused 0 (delta 0)
+Receiving objects: 100% (79/79), 28.60 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (23/23), done.
+Checking connectivity... done.
+sogoudeiMac-3:SGGit dujia$ cd /Users/sogou/Work/MYGit/GGLibs/DJHomeFramework 
+sogoudeiMac-3:DJHomeFramework dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJCommonFrameWork` from `/Users/sogou/Work/MYGit/GGLibs/DJCommonFrameWork`
+Downloading dependencies
+Installing DJCommonFrameWork 0.0.2 (was 0.0.2)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJHomeFramework dujia$ cd /Users/sogou/Work/MYGit/GGProject 
+sogoudeiMac-3:GGProject dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.1 is available.
+To update use: `gem install cocoapods`
+Until we reach version 1.0 the features of CocoaPods can and will change.
+We strongly recommend that you use the latest version at all times.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJCommonFrameWork` from `/Users/sogou/Work/MYGit/GGLibs/DJCommonFrameWork`
+Fetching podspec for `DJHomeFramework` from `/Users/sogou/Work/MYGit/GGLibs/DJHomeFramework`
+Downloading dependencies
+Using DJCommonFrameWork (0.0.2)
+Using DJHomeFramework (0.0.8)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There are 2 dependencies from the Podfile and 2 total pods installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:GGProject dujia$ cd ..
+sogoudeiMac-3:MYGit dujia$ ls
+CKCrashReporter	CrashLib	DJSpec		GGLibs		GGProject	ThirdDemo	Tools		ijkplayer
+sogoudeiMac-3:MYGit dujia$ cd GGLibs/
+sogoudeiMac-3:GGLibs dujia$ ls
+DJCommonFrameWork	DJHomeFramework		DJVideoPlayer
+sogoudeiMac-3:GGLibs dujia$ cd DJHomeFramework/
+sogoudeiMac-3:DJHomeFramework dujia$ podupdate
+-bash: podupdate: command not found
+sogoudeiMac-3:DJHomeFramework dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJCommonFrameWork` from `/Users/sogou/Work/MYGit/GGLibs/DJCommonFrameWork`
+Fetching podspec for `GGProject` from `/Users/sogou/Work/MYGit/GGProject`
+Downloading dependencies
+Using DJCommonFrameWork (0.0.2)
+Installing DJHomeFramework (0.0.7)
+Installing GGProject (0.0.1)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJHomeFramework dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJCommonFrameWork` from `/Users/sogou/Work/MYGit/GGLibs/DJCommonFrameWork`
+Removing DJHomeFramework
+Downloading dependencies
+Using DJCommonFrameWork (0.0.2)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJHomeFramework dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJCommonFrameWork` from `/Users/sogou/Work/MYGit/GGLibs/DJCommonFrameWork`
+Fetching podspec for `GGProject` from `/Users/sogou/Work/MYGit/GGProject`
+Downloading dependencies
+Using DJCommonFrameWork (0.0.2)
+Installing DJHomeFramework (0.0.7)
+Installing GGProject (0.0.1)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJHomeFramework dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJCommonFrameWork` from `/Users/sogou/Work/MYGit/GGLibs/DJCommonFrameWork`
+Fetching podspec for `GGProject` from `/Users/sogou/Work/MYGit/GGProject`
+Removing DJHomeFramework
+Downloading dependencies
+Using DJCommonFrameWork (0.0.2)
+Installing GGProject 0.0.1 (was 0.0.1)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There are 2 dependencies from the Podfile and 2 total pods installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJHomeFramework dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJCommonFrameWork` from `/Users/sogou/Work/MYGit/GGLibs/DJCommonFrameWork`
+Fetching podspec for `GGProject` from `/Users/sogou/Work/MYGit/GGProject`
+Downloading dependencies
+Using DJCommonFrameWork (0.0.2)
+Using GGProject (0.0.1)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There are 2 dependencies from the Podfile and 2 total pods installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJHomeFramework dujia$ cd .
+sogoudeiMac-3:DJHomeFramework dujia$ ls
+DJHomeFramework			DJHomeFramework.xcworkspace	DJHomeFramework_a		Podfile.lock
+DJHomeFramework.podspec		DJHomeFrameworkTests		LICENSE				Pods
+DJHomeFramework.xcodeproj	DJHomeFrameworkUITests		Podfile				podpush
+sogoudeiMac-3:DJHomeFramework dujia$ cd ..
+sogoudeiMac-3:GGLibs dujia$ ls
+DJCommonFrameWork	DJHomeFramework		DJVideoPlayer
+sogoudeiMac-3:GGLibs dujia$ cd DJ
+-bash: cd: DJ: No such file or directory
+sogoudeiMac-3:GGLibs dujia$ cd DJCommonFrameWork/
+sogoudeiMac-3:DJCommonFrameWork dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJHomeFramework` from `/Users/sogou/Work/MYGit/GGLibs/DJHomeFramework`
+Fetching podspec for `GGProject` from `/Users/sogou/Work/MYGit/GGProject`
+Downloading dependencies
+Installing DJCommonFrameWork (0.0.2)
+Installing DJHomeFramework (0.0.8)
+Installing GGProject (0.0.1)
+Generating Pods project
+Integrating client project
+
+[!] Please close any current Xcode sessions and use `DJCommonFrameWork.xcworkspace` for this project from now on.
+Sending stats
+Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJCommonFrameWork dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJHomeFramework` from `/Users/sogou/Work/MYGit/GGLibs/DJHomeFramework`
+Fetching podspec for `GGProject` from `/Users/sogou/Work/MYGit/GGProject`
+Removing DJCommonFrameWork
+Downloading dependencies
+Installing DJHomeFramework 0.0.8 (was 0.0.8)
+Using GGProject (0.0.1)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There are 2 dependencies from the Podfile and 2 total pods installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJCommonFrameWork dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJHomeFramework` from `/Users/sogou/Work/MYGit/GGLibs/DJHomeFramework`
+Downloading dependencies
+Using DJHomeFramework (0.0.8)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJCommonFrameWork dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Fetching podspec for `DJHomeFramework` from `/Users/sogou/Work/MYGit/GGLibs/DJHomeFramework`
+Downloading dependencies
+Using DJHomeFramework (0.0.8)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJCommonFrameWork dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Downloading dependencies
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There are 0 dependencies from the Podfile and 0 total pods installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+
+[!] [!] The Podfile does not contain any dependencies.
+sogoudeiMac-3:DJCommonFrameWork dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+[!] Unable to find a specification for `JSPatch`
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJCommonFrameWork dujia$ pod update
+Update all pods
+Cloning spec repo `jiaoshenmene-1` from `https://github.com/jiaoshenmene/Specs.git`
+^Z
+[1]+  Stopped                 pod update
+sogoudeiMac-3:DJCommonFrameWork dujia$ pod update
+Update all pods
+Updating local specs repositories
+
+CocoaPods 1.0.0.beta.6 is available.
+To update use: `gem install cocoapods --pre`
+[!] This is a test version we'd love you to try.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+
+CocoaPods 1.0.1 is available.
+To update use: `gem install cocoapods`
+Until we reach version 1.0 the features of CocoaPods can and will change.
+We strongly recommend that you use the latest version at all times.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Downloading dependencies
+Installing JSPatch (1.0)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Your Podfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.
+sogoudeiMac-3:DJCommonFrameWork dujia$ cd ..
+sogoudeiMac-3:GGLibs dujia$ cd DJHomeFramework/
+sogoudeiMac-3:DJHomeFramework dujia$ vim .gitignore 
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -33,21 +723,9 @@ xcuserdata
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://github.com/fastlane/fastlane/blob/master/docs/Gitignore.md
-
-fastlane/report.xml
-fastlane/screenshots
+Pods/
+profile
+*.xcworkspace
+*.lock
+*.unlock
+".gitignore" 57L, 1205C
