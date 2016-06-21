@@ -16,6 +16,7 @@
 #import "NSMutableDictionary+DJUtility.h"
 #import "DJMediator.h"
 
+#import "DJCommDef.h"
 
 
 
@@ -31,26 +32,7 @@
 
 
 
-// 单例集成
-#define StaticInstanceImplementation(x)     \
-+ (instancetype)getInstance {               \
-static x *__instance = nil;             \
-static dispatch_once_t onceToken;       \
-dispatch_once(&onceToken, ^{            \
-__instance = [x new];               \
-});                                     \
-return __instance;                      \
-}
 
-// initSelf
-#define ObjectInitSelf                      \
-- (instancetype)init {                      \
-self = [super init];                    \
-if (self) {                             \
-[self initSelf];                    \
-}                                       \
-return self;                            \
-}
 
 #endif /* DJCommo
 
